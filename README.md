@@ -48,7 +48,7 @@ Window Docker 전격 분석
 #### 본문
 
 <details>
-<summary>Step 1</summary>
+<summary>Step 1 접기/펼치기</summary>
 
 ### 시작하기 Step1. 환경설정
 
