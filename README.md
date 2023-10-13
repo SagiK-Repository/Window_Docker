@@ -10,6 +10,7 @@ Window Docker 전격 분석
   - [x] Windows 기반 컨테이너 설명서
     - [x] 시작하기
       - [x] 환경설정
+      - [ ] 첫 번째 컨테이너 실행
 
 ### 제작자
 [@SAgiKPJH](https://github.com/SAgiKPJH)
@@ -42,6 +43,11 @@ Window Docker 전격 분석
 - 환경설정
   - 기본적인 docker desktop이 동작 가능하면 충분합니다.
   - 추가로 Window Admin Center를 통해 Window Docker를 다룰 수 있습니다.
+- 첫 번째 컨테이너 실행
+  - Window 컨테이너로 전환 (`no matching manifest for linux/amd64 in the manifest list entries`)
+    - `$Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchDaemon`
+  - `docker pull mcr.microsoft.com/windows/nanoserver:ltsc2022`
+  - `docker run -it mcr.microsoft.com/windows/nanoserver:ltsc2022 cmd.exe`
 
 <br>
 
@@ -98,5 +104,6 @@ Window Docker 전격 분석
      Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/microsoft/Windows-Containers/Main/helpful_tools/Install-ContainerdRuntime/install-containerd-runtime.ps1" -o install-containerd-runtime.ps1
      .\install-containerd-runtime.ps1
      ```
-
 </details>
+
+<details>
